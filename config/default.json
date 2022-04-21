@@ -1,0 +1,32 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 200000,
+    "max": 200000
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "rR0OCW6LmOcN1euIqleoaRGnD8c=",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "mssql": "mssql://SA:Password1!@localhost:1433/coviddata"
+}
