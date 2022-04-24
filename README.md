@@ -6,7 +6,8 @@
 
 This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications. 
 The current code is setup using [Sequelize](https://sequelize.org/) as the orm. Currently it is configured to use MSSQL but
-should work on anything they support after installing the correct libraries.
+should work on anything they support after installing the correct libraries. Change your db connection string in default.json.mssql. 
+Note if you rename mssql to something else you will also need to change the dialect in sequelize.ts
 
 The models mirror data provided by [OWID](https://github.com/owid/covid-19-data/tree/master/public/data).
 
