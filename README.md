@@ -4,7 +4,14 @@
 
 ## About
 
-This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
+This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications. 
+The current code is setup using [Sequelize](https://sequelize.org/) as the orm. Currently it is configured to use MSSQL but
+should work on anything they support after installing the correct libraries.
+
+The models mirror data provided by [OWID](https://github.com/owid/covid-19-data/tree/master/public/data).
+
+## Todo
+- create model/service to store saved searches
 
 ## Getting Started
 
